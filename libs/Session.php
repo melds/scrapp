@@ -1,29 +1,49 @@
 <?php
+class Session{
 
-class Session {
-
-    function __construct() {
-
+    public static function init(){
+      @session_start();
+      
     }
 
-    public function init() {
-        @session_start();
+    public static function exists($name)
+    {
+        return !empty($_SESSION[$name]);
     }
 
-    public static function set($key, $value) {
-        $_SESSION[$key] = $value;
+    public static function put($name,$value)
+    {
+        return $_SESSION[$name] = $value;
     }
 
-    public static function get($key) {
+    public static function get($name)
+    {
+        return $_SESSION[$name];
+    }
 
-        if (isset($_SESSION[$key])) {
-            return $_SESSION[$key];
+    public static function delete($name)
+    {
+        if (self::exists($name)) {
+            unset($_SESSION[$name]);
         }
     }
 
-    public static function destroy() {
-        session_unset();
-        session_destroy();
+    public static function flash($name,$string = '')
+    {
+        if (self::exists($name)) {
+            $session = self::get($name);
+            self::delete($name);
+            return $session;
+        }else{
+            if (!empty($string)) {
+                self::put($name,$string);
+            }
+        }
     }
 
+    public static function destroy()
+    {
+        session_destroy();
+        $_SESSION = [];
+    }
 }
