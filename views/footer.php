@@ -1,9 +1,10 @@
 
     </body>
-    <script src="<?php echo URL;?>public/js/jquery-2.1.4.js"></script>
-    <script src="<?php echo URL;?>public/js/materialize.min.js"></script>
-    <script src="<?php echo URL;?>public/js/script.js"></script>
-    <script src="<?php echo URL;?>public/js/pagination.js"></script>
+    <!-- jQuery -->
+    <script src="public/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="public/js/bootstrap.min.js"></script>
     <footer>
         <p>shoes here</p>
     </footer>
