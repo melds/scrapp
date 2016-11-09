@@ -161,10 +161,37 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 50px;
     background-color: #f8f8f8;
 }
-
 p.copyright {
     margin: 15px 0 0;
+}
+#avatar_div{
+    border:1px solid #ccc;
+    padding: 10px;
+}
+#avatar_div #usericon{
+    font-size: 15em;
+    color: #ccc;
+    transition: color .5s;
+}
+#avatar_info p{
+    text-align: center;
+}
+#avatar_main_div{
+    border:5px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+}
+#avatar_div #upload_profile{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    left: 5px;
+    top: 5px;
+    color: white;
+    display: none;
+}
+#avatar_div #upload_profile:hover{
+    background-color: rgba(0,0,0,.9);
 }
