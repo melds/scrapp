@@ -18,7 +18,8 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,16 +44,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+                <a class="navbar-brand topnav" href="#">ScrApp  </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+  
                     <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
+                        <a  data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> Request for pick-up</a>
+
                     </li>
                     <li>
                         <a href="#contact">Logout</a>
@@ -63,12 +63,23 @@
         </div>
         <!-- /.container -->
     </nav>
-        <div class="Container">
-            
+        <div class="container">
+            <div class="row col-sm-6" id="avatar_main_div">
+                <div id="avatar_div" class="col-sm-6" align="center">
+                    <i id="usericon" class="fa fa-user" aria-hidden="true"></i>
+                    <button id="upload_profile" class="btn btn-sm">upload avatar</button>
+                </div>
+                <div class="col-sm-6" id="avatar_info">
+                    <p>Juan Dela Cruz</p>
+                    <p>Tacloban City</p>
+                    <p>Brgy 95, Marasbaras</p>
+                    <p>juandelacruz@gmail.com</p>
+                    <p>09469999999</p>
+                </div>
+            </div>
         </div>
         <div class="container">
-                                <a class="btn btn-default btn-lg" data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> <span class="network-name">Request for pick-up</span></a>
-        <div class="modal fade" id="modal-login">
+                                        <div class="modal fade" id="modal-login">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -148,3 +159,18 @@
 </body>
 
 </html>
+<script type="text/javascript">
+function _(id) {
+    return document.getElementById('id');
+}
+$(document).ready(function(){
+    $("#avatar_div").mouseenter(function(){
+        $("#upload_profile").fadeIn('slow');
+        $('#usericon').css('color','#333');
+    });
+    $("#avatar_div").mouseleave(function(){
+        $("#upload_profile").fadeOut('slow');
+        $('#usericon').css('color','#ccc');
+    });
+});
+</script>
