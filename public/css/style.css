@@ -1,0 +1,210 @@
+body{
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+nav{
+  /*box-shadow: 0px 0px 0px #fff !important;*/
+	/*padding: 0px 5px;*/
+  background-color: rgba(130, 0, 0, 1) !important;
+  padding-right: 5px;
+}
+main{
+  flex: 1 0 auto;
+}
+header{
+  /*height: 50px;*/
+}
+/*select{
+    display: block !important;
+    color: #333 !important;
+}*/
+.brand-logo{
+  height: 100%;
+  display: block;
+}
+.brand-title{
+  padding-left: 70px;
+}
+footer{
+	margin-top: 50px;
+	min-height: 80px;
+	text-align: center;
+	background-color: rgba(130, 0, 0, 1) !important;
+	padding: 20px 20px;
+  color: #fff;
+
+}
+footer .intel_logo{
+	height: 80px;
+	padding: 10px;
+}
+
+/*END OF HEADER STYLE*/
+form:not(.edit_form):not(.add_form){
+	background-color: rgba(130, 0, 0, 0.8);
+	padding: 20px;
+	border-radius: 5px;
+	color: #fff !important;
+}
+/*LOGIN FORM*/
+.logo_container{
+  text-align: center;
+}
+.logo_container img{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.logo_container img:first-child{
+	animation: fadeInFromRight 1s ease;
+}
+.logo_container img:last-child{
+	animation: fadeInFromLeft 1s ease;
+}
+.loginbtn_container{
+  text-align: center;
+}
+.banner{
+	margin-top: 5% !important;
+  display: block;
+  margin: auto;
+}
+.login_form{
+	margin-top: 6% !important;
+  width: 500px;
+	margin: auto;
+}
+.login_form_header{
+	margin: 0;
+}
+.error_message{
+  margin: 0;
+  padding: 10px 0px;
+  color: #b71c1c;
+	animation: drop .5s ease;
+}
+.input-field label{
+  color: #ddd !important;
+}
+/*END OF LOGIN*/
+.landing_page{
+	padding: 20px;
+}
+
+.landing_page #updateModal, #addModal{
+	width: 80%;
+	min-height: 70%;
+}
+
+.landing_page #updateModal .modal-content label, .landing_page #addModal .modal-content label{
+	color: #333 !important;
+}
+.landing_page #updateModal .modal-footer, .landing_page #addModal .modal-footer{
+	padding-right: 20px;
+	position: absolute;
+	bottom: 0;
+}
+.landing_page #updateModal .required-input, .optional-input, .landing_page #addModal .required-input, .optional-input{
+	width: 50%;
+	display: inline-block;
+	height: 400px;
+	padding: 20px;
+}
+.landing_page #updateModal .required-input,.landing_page #addModal .required-input{
+	float: left;
+}
+.landing_page .search_form .input-field{
+  width: 89%;
+  display: inline-block;
+}
+.landing_page .search_form .input-field input[type='text']:focus{
+  border-bottom-color: #fff !important;
+  box-shadow: 0 1px 0 0 #fff;
+}
+.landing_page .search_form .input-field .valid{
+  border-bottom-color: #fff !important;
+  box-shadow: 0 1px 0 0 #fff;
+}
+.landing_page .search_form .submit_btn_container{
+  width: 10%;
+  display: inline-block;
+  /*border: 1px solid #fff;*/
+  text-align: right;
+}
+.landing_page .form_container{
+  background-color: rgba(130, 0, 0, 0.8);
+  border-radius: 5px;
+}
+.landing_page .result_table tr td{
+  padding: 2px;
+}
+.landing_page .result_table tr th:last-child{
+  padding-left: 30px;
+}
+.landing_page .result_table tr td:last-child{
+  text-align: right;
+}
+#pagination_container{
+  text-align: center;
+}
+.landing_page .search_form .advance_search{
+  /*border: 1px solid #fff;*/
+  /*display: inline-block;*/
+  /*display: none;*/
+}
+.landing_page .search_form .advance_search #chevron{
+  transition: all .3s;
+}
+.landing_page .search_form .advance_btn_wrapper{
+  /*border: 1px solid #fff;*/
+  display: inline-block;
+}
+.landing_page .search_form .advance_search .advance_inputs.hidden{
+  display: none;
+}
+.landing_page .search_form .advance_search .advance_inputs .course_select{
+  width: 65%;
+  display: inline-block;
+}
+.landing_page .search_form .advance_search .advance_inputs .batch_input{
+  width: 24%;
+  display: inline-block;
+}
+.result_table thead tr th:nth-child(5),
+.result_table thead tr th:nth-child(6){
+  text-align: center;
+}
+.result_table tbody tr td:nth-child(5),
+.result_table tbody tr td:nth-child(6),
+.result_table tbody tr td:nth-child(7){
+  text-align: center;
+}
+@media print{
+  nav{
+    display: none !important;
+  }
+  form{
+    display: none;
+  }
+  .result_table tbody tr td:last-child{
+    display: none;
+  }
+  .result_table tbody tr{
+    display: table-row !important;
+  }
+  #pagination_container{
+      display: none;
+  }
+  .edit-trigger{
+    display: none !important;
+  }
+  footer{
+    display: none !important;
+  }
+}
