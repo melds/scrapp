@@ -10,6 +10,7 @@
 	    <meta name="author" content="">
 
 	    <title>ScrApp</title>
+            <link href="public/img/logo.ico" rel="shortcut icon">
 			<link href="public/css/bootstrap.min.css" rel="stylesheet">
 	    <link href="public/css/select2.min.css" rel="stylesheet">
 			<link href="public/css/landing-page.css" rel="stylesheet">
@@ -28,7 +29,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">ScrApp  </a>
+                <div id="logo_img">
+                    <a href="<?=URL ?>">
+                        <img style="width: 40px;" class="img-responsive" src="public/img/logo.png" alt="">
+                    </a>
+                </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
