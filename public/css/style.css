@@ -38,6 +38,7 @@ footer{
   padding: 10px;
   width: 500px;
   margin: auto;
+  margin-top: 5%;
 }
 .loginContainer .loginHeader{
   background-color: #35d480;
@@ -46,4 +47,12 @@ footer{
   margin-bottom: 15px;
   padding: 10px;
   color: #fff;
+}
+.right{
+  float: right !important;
+}
+.submit-button{
+  background-color: #35d480;
+  padding: 10px;
+  width: 100px;
 }
