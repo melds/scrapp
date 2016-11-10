@@ -51,15 +51,11 @@
                 <ul class="nav navbar-nav navbar-right">
   
                     <li>
-                        <a href="shop_page.php">Notification <i class="fa fa-user fa-fw"></i>
-                        <span id="badge_shop" class="badge">2</span></a>
+                        <a  data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> Request for pick-up</a>
+
                     </li>
                     <li>
-                        <a href="transaction.php">Transaction
-                         <i class="fa fa-list-alt" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#contact">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                        <a href="#contact">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +63,7 @@
         </div>
         <!-- /.container -->
     </nav>
-    
+
     <div class="container">
     <div class="col-sm-6 col-sm-offset-3" id="trans_iconHistory">
                 <div class="col-sm-12" id="history">
@@ -113,7 +109,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" align="center">
+                <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
                             <a href="#">Home</a>
@@ -140,3 +136,6 @@
 
     </body>
     </html>
+    <script type="text/javascript">
+
+    </script>

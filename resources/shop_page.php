@@ -49,12 +49,8 @@
                 <ul class="nav navbar-nav navbar-right">
   
                     <li>
-                        <a href="shop_page.php">Notification <i class="fa fa-user fa-fw"></i>
+                        <a >Notification <i class="fa fa-user fa-fw"></i>
                         <span id="badge_shop" class="badge">2</span></a>
-                    </li>
-                    <li>
-                        <a href="transaction.php">Transaction
-                         <i class="fa fa-list-alt" aria-hidden="true"></i></a>
                     </li>
                     <li>
                         <a href="#contact">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
@@ -67,7 +63,7 @@
     </nav>
 
 <div class="container">
-  		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+  		<div class="col-xs-8 col-xs-offset-2">
   			<div role="tabpanel">
   				<!-- Nav tabs -->
   				<ul class="nav nav-tabs" role="tablist" >
@@ -171,7 +167,7 @@
 <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" align="center">
+                <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
                             <a href="#">Home</a>

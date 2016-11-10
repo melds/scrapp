@@ -163,12 +163,7 @@ h6 {
 footer {
     padding: 50px;
     background-color: #f8f8f8;
-  position: relative;
-  margin-top: 220px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
 }
-
 p.copyright {
     margin: 15px 0 0;
 }
@@ -342,54 +337,13 @@ p.copyright {
     margin-left: -8px;
     margin-top: -10px;
 }
-#trans_icon{
+#history #trans_icon{
     color: teal;
     font-size: 18px;
     vertical-align: middle;
 }
-#modal-request h4{
-    text-align: center;
-    padding-bottom: 5px;
-    border-bottom: 4px solid teal;
-    margin-bottom: 15px;
-}
-#modal-request label{
-    font-size: 12px;
-}
-#modal-request input{
-    font-size: 12px;
-}
-#modal-request #but_request{
-    background-color: teal;
-    height:34px;
-    transition: background-color .3s;
-    border:1px solid teal;
-    color: white;
-}
-#modal-request #but_request:hover{
-    background-color: white;
-    color: teal;
-}
-#modal-request #modal_up_div{
-    padding-bottom: 15px;
-}
-#modal-request #btn_close_span{
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 4px;
-    padding-bottom: 7px;
-    border-radius: 50px;
-    vertical-align: middle;
-    background-color: red;
-    color: black;
-    z-index: 50;
-    transition: transform 1.5s;
-}
-#modal-request #btn_close_span:hover{
-    transform: rotate(315deg);
+#history #trans_icon:hover{
+   color: red;
 }
 /*#req_cat a:focus{
     background-color: teal;
