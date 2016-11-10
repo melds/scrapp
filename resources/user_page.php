@@ -51,11 +51,11 @@
                 <ul class="nav navbar-nav navbar-right">
   
                     <li>
-                        <a  data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> Request for pick-up</a>
+                        <a  data-toggle="modal" href='#modal-request'><i class="fa fa-truck fa-fw"></i> Request for pick-up</a>
 
                     </li>
                     <li>
-                        <a href="#contact">Logout</a>
+                        <a href="#contact"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@
             <div class="col-sm-6">
                 <div class="col-sm-12" id="history">
                     <div class="col-sm-12">
-                        <h5><i class="fa fa-book" aria-hidden="true"></i> TRANSACTION HISTORY</h5>
+                        <h5><i id="trans_icon" class="fa fa-list-alt" aria-hidden="true"></i> TRANSACTION HISTORY</h5>
                         <div class="table-responsive"> 
                             <table class="table">
                                 <thead>
@@ -118,49 +118,43 @@
                     </div>
                 </div>
         </div>
-        <div class="container">
-            <div class="modal fade" id="modal-login">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="container">
-                                <div class="row centered-form">
-                                 <div class="col-xs-12 col-sm-4 col-md-6 col-sm-offset-0 col-md-offset-0">
-                                  <div class="panel panel-default">
-                                      <div class="panel-heading">
-                                          <h3 class="panel-title">Please provide a pick-up Date</h3>
-                                       </div>
-                                      <div class="panel-body">
-                                         <form role="form">
-                                            <div class="row">
-                                                <div class="col-xs-8">
-                                                      <div class="form-group">
-                                                           <input type="date" name="date" id="date" class="date form-control input-sm" placeholder="Username">
-                                                    </div>
-                                                    <div class="formn-group">
-                                                        <select name="type" id="input" class="form-control" required="required">
-                                                            <option value="">-Type-</option>
-                                                            <option value="">Diaryo</option>
-                                                            <option value="">Bote</option>
-                                                            <option value="">Bakal</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <input type="submit" value="Send request" class="btn btn-info btn-block">
-                                                </div>
-                                            </div>
-                                         </form>
-                                         </div>
-                                     </div>
-                                </div>
-                             </div>
-                        </div>
+
+        <div class="modal fade" id="modal-request">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button id="btn_close_span" type="button" class="close" data-dismiss="modal">
+                  <span style="color:black">+</span>
+                </button>
+              <div class="modal-body">
+              <div class="container-fluid">
+                <div class="col-sm-10 col-sm-offset-1" id="modal_up_div">
+                <h4>Please provide a pick-up Date</h4>
+                <form>
+                <div class="row">
+                      <div class="col-xs-12 col-sm-8">
+                          <div class="form-group">
+                                 <input type="date" class="form-control" placeholder="Username">
+                          </div>
+                          <div class="form-group">
+                              <select class="form-control" name="type" id="input" crequired">
+                                  <option value="">-Type-</option>
+                                  <option value="">Diaryo</option>
+                                  <option value="">Bote</option>
+                                  <option value="">Bakal</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                          <input id="but_request" type="submit" class="btn btn-block" value="Submit">
+                      </div>
                     </div>
+                </form>
                 </div>
-            </div>
-        </div>
-        </div>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
         <div class="modal fade" id="modal-update">
           <div class="modal-dialog" role="document">
@@ -199,10 +193,10 @@
         </div><!-- /.modal -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" align="center">
                     <ul class="list-inline">
                         <li>
                             <a href="#">Home</a>
