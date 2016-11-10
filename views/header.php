@@ -18,7 +18,7 @@
 	</head>
 	<body >
 	<!-- Navigation -->
-    <!-- <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,4 +43,4 @@
                 </ul>
             </div>
         </div>
-    </nav> -->
+    </nav>

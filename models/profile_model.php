@@ -21,6 +21,13 @@ class Profile_Model extends Model
      return !empty($this->db->results()[0])? $this->db->results()[0] : array();
 
   }
+
+  public function getAppointments(){
+    $pid = Session::get('user')['id'];
+    $this->db->query("select a.appointment_id, u.lastname, u.firstname, b.brgy_name, a.pickup_date from appointments a left join users u on a.userid = u.userid left join brgy b on b.brgy_id = u.brgy_id where a.p_id = {$pid}");
+    return !empty($this->db->results())? $this->db->results() : array();
+  }
+
 }
 
 

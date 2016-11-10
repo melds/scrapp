@@ -23,10 +23,11 @@ class Login_Model extends Model
       }
     }else if($type=='shop'){
       $_POST['password'] = Hash::create('md5',$_POST['password'],HASH_KEY);
+      unset( $_POST['as']);
       $this->db->query("select p_id from partners where username = ? and password = ?", $_POST);
       Session::put("user",[
         "id"=> $this->db->results()[0]->p_id,
-        "type"=>"partner"
+        "type"=>"shop"
       ]);
     }else{
       return false;
