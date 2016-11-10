@@ -13,7 +13,9 @@ class Index_Model extends Model
 	}
 
 	function register(){
+		
 		// print_r($_POST);
+
 		$this->db->insert('users',[
 			"lastname"=>$_POST['last_name'],
 			"firstname"=>$_POST['first_name'],

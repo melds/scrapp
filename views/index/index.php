@@ -6,16 +6,16 @@
 					<div class="row">
 							<div class="col-lg-12">
 									<div class="intro-message">
-											<h1>Landing Page</h1>
-											<h3>A Template by Start Bootstrap</h3>
+											<h1>Landing Page</h1><!-- 
+											<h3>A Template by Start Bootstrap</h3> -->
 											<hr class="intro-divider">
 											<ul class="list-inline intro-social-buttons">
-	'                            <li>
-															<a class="btn btn-default btn-lg" data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> <span class="network-name">Login</span></a>
-													</li>'
-													<li>
-															<a class="btn btn-default btn-lg" data-toggle="modal" href='#modal-register'><i class="fa fa-cube fa-fw"></i> <span class="network-name">Register</span></a>
-													</li>
+'                           					 <li>
+														<a class="btn btn-default btn-lg" data-toggle="modal" href='#modal-login'><i class="fa fa-user fa-fw"></i> <span class="network-name">Login</span></a>
+												</li>'
+												<li>
+														<a class="btn btn-default btn-lg" data-toggle="modal" href='#modal-register'><i class="fa fa-cube fa-fw"></i> <span class="network-name">Register</span></a>
+												</li>
 
 											</ul>
 									</div>
@@ -100,18 +100,25 @@
 																				<h3 class="panel-title">Please sign in</h3>
 																		 </div>
 																		<div class="panel-body">
-																			 <form role="form">
+																			 <form role="form" action="<?= URL."login"  ?>" method="post">
 																					<div class="row">
 																							<div class="col-xs-6 col-sm-6 col-md-6">
-																										<div class="form-group">
-																												 <input type="text" name="username" id="username" class="form-control input-sm" placeholder="Username">
-																									</div>
+																								<div class="form-group">
+																									<input type="text" name="username" id="username" class="form-control input-sm" placeholder="Username">
+																								</div>
 																							</div>
 																							<div class="col-xs-6 col-sm-6 col-md-6">
-																								 <div class="form-group">
-																											 <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+																								<div class="form-group">
+																								<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
 																							 </div>
 																							</div>
+																					</div>
+																					<div class="form-group">
+																						<select id="" class="form-control" name="as" required>
+																							<option value="" disabled selected>Login as</option>
+																							<option value="user">User</option>
+																							<option value="shop">Shop</option>
+																						</select>
 																					</div>
 																					<input type="submit" value="Login" class="btn btn-info btn-block">
 																			 </form>

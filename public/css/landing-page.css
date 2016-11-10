@@ -161,10 +161,107 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 50px;
     background-color: #f8f8f8;
 }
-
 p.copyright {
     margin: 15px 0 0;
+}
+#avatar_div{
+    border:1px solid #ccc;
+    padding: 10px;
+}
+#avatar_div #usericon{
+    font-size: 15em;
+    color: #ccc;
+    transition: color .5s;
+}
+#avatar_info p{
+    text-align: center;
+}
+#avatar_info button{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: teal;
+    transition: background-color .4s;
+    border:1px solid teal;
+    color: white;
+}
+#avatar_info button:hover{
+    background-color: white;
+    color: teal;
+}
+#avatar_info h5{
+    font-weight: bolder;
+}
+#avatar_main_div{
+    border:5px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+}
+#avatar_div #upload_profile{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    left: 5px;
+    top: 5px;
+    color: white;
+    display: none;
+}
+#avatar_div #upload_profile:hover{
+    background-color: rgba(0,0,0,.9);
+}
+#modal-update h4{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 4px solid teal;
+}
+#modal-update label{
+    font-size: 12px;
+}
+#modal-update input{
+    font-size: 12px;
+}
+#modal-update #but_sub{
+    background-color: teal;
+    height:38px;
+    transition: background-color .3s;
+    border:1px solid teal;
+    color: white;
+}
+#modal-update #but_sub:hover{
+    background-color: white;
+    color: teal;
+}
+#modal-update #modal_up_div{
+    padding-bottom: 15px;
+}
+#modal-update #btn_close_span{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    border-radius: 50px;
+    vertical-align: middle;
+    background-color: red;
+    color: black;
+    z-index: 50;
+    transition: transform 1.5s;
+}
+#modal-update #btn_close_span:hover{
+    transform: rotate(315deg);
+}
+#history{
+    border:5px solid #ccc;
+    border-radius: 3px;
+}
+#history h5{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#history table{
+    font-size: 13px;
 }

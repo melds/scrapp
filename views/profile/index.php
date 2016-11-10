@@ -8,11 +8,11 @@
           </div>
           <div class="col-sm-6" id="avatar_info">
               <h5 align="center"><b>PERSONAL INFORMATION</b></h5>
-              <p>Juan Dela Cruz</p>
+              <p><?= $this->userDetails->firstname. " " .$this->userDetails->lastname ?></p>
               <p>Tacloban City</p>
-              <p>Brgy 95, Marasbaras</p>
-              <p>juandelacruz@gmail.com</p>
-              <p>09469999999</p>
+              <p><?= $this->userDetails->brgy_name ?></p>
+              <p><?= $this->userDetails->email ?></p>
+              <p><?= $this->userDetails->phone  ?></p>
               <div align="center">
                   <button class="btn btn-sm btn-danger"  data-toggle="modal" href='#modal-update'>UPDATE INFO</button>
               </div>
@@ -34,15 +34,6 @@
                           </thead>
                           <tbody>
                           <tr>
-                              <td>DEC 25,2016</td>
-                              <td>BOTE</td>
-                              <td>Scrapper Junk</td>
-                          </tr>
-                          <tr>
-                              <td>DEC 25,2016</td>
-                              <td>BOTE</td>
-                              <td>Scrapper Junk</td>
-                          </tr>
                               <td>DEC 25,2016</td>
                               <td>BOTE</td>
                               <td>Scrapper Junk</td>

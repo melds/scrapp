@@ -1,4 +1,4 @@
-<?php Session::init(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,18 +9,16 @@
 	    <meta name="description" content="">
 	    <meta name="author" content="">
 
-	    <title>Landing Page - Start Bootstrap Theme</title>
-	    <!-- Bootstrap Core CSS -->
-	    <link href="public/css/bootstrap.min.css" rel="stylesheet">
-	    <!-- Custom CSS -->
-	    <link href="public/css/landing-page.css" rel="stylesheet">
-	    <!-- Custom Fonts -->
+	    <title>ScrApp</title>
+			<link href="public/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="public/css/select2.min.css" rel="stylesheet">
+			<link href="public/css/landing-page.css" rel="stylesheet">
+	    <link href="public/css/style.css" rel="stylesheet">
 	    <link href="public/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body >
 	<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -45,4 +43,4 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
